@@ -25,6 +25,7 @@ ui <- fluidPage(
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
+      selectInput('x', 'X', choices = nms, selected = "carat"),
       selectInput('y', 'Y', choices = nms, selected = "price"),
       sliderInput("carat.adjuster",
                   "Carats",
